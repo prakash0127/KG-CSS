@@ -1,0 +1,21 @@
+/* adding heading some css property */
+#heading {
+  color: red;
+}
+
+div #head {
+  color: navy;
+}
+
+div p {
+  color: orchid;
+}
+
+div .main {
+  color: brown;
+}
+
+#first,
+#second {
+  color: darkgoldenrod;
+}
