@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: palegreen;
+  height: 30px;
+}
+nav {
+  padding: 5px;
+}
+nav a {
+  text-decoration: none;
+  /* display: inline-block; */
+  margin-left: 55px;
+  padding: 5px;
+}
+#second {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+}
+#container {
+  border: 3px solid;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background-color: violet;
+  margin: 5px;
+}
+#box2 {
+  z-index: 2;
+  position: absolute;
+  left: 30px;
+}
+#box4 {
+  position: fixed;
+  right: 10px;
+}
+footer {
+  position: fixed;
+  bottom: 5px;
+  background-color: mediumaquamarine;
+}

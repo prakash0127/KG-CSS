@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice set 4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #contain {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+      }
+      #btn {
+        height: 100px;
+        width: 100px;
+        padding: 10px 15px;
+        margin: 100px;
+        border: 3px dotted red;
+        border-radius: 50px;
+      }
+      .box1 {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+      }
+      .box2 {
+        background-color: yellowgreen;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contain">This is simple div</div>
+    <button id="btn">Click</button>
+
+    <div>
+      <div class="box1">Hello World</div>
+      <div class="box2">Hello World</div>
+    </div>
+  </body>
+</html>

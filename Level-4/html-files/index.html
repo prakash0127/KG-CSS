@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #btn {
+        background-color: slateblue;
+        color: bisque;
+        border: none;
+        padding: 10px 5px 10px 5px;
+        margin: 10px;
+        border: 3px solid royalblue;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+      #btn2 {
+        background-color: slateblue;
+        color: bisque;
+        border: none;
+        padding: 10px 5px 10px 5px;
+        margin: 10px;
+        border: 3px solid royalblue;
+        border-radius: 2px;
+        box-sizing: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+    <button id="btn2">Click Me</button>
+  </body>
+</html>
