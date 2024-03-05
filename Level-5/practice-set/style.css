@@ -30,6 +30,7 @@ nav a {
   display: inline-block;
   background-color: violet;
   margin: 5px;
+  border: 2px solid red;
 }
 #box2 {
   z-index: 2;

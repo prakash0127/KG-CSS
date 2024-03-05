@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flex-container-wrap</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #heading {
+        margin-left: 15px;
+      }
+      #container {
+        width: 800px;
+        height: 600px;
+        background-color: lavender;
+        border: 3px solid black;
+        display: flex;
+        /* if we apply flex it will in in the line  */
+        /* flex-direction: row; */
+        /* this is defalut direction */
+        /* flex-direction: row-reverse; */
+        /* this will make start from right  */
+        /* flex-direction: column; */
+        /* it will make in column  */
+        /* flex-direction: column-reverse; */
+        /* it will satrt from botton (item in bottom and then above item 2 ) */
+        /* justify-content: flex-start; */
+        /* it will start from begining as you say by default */
+        /* justify-content: flex-end; */
+        /* it will go end of the row but it will start from item-1, 2 , 3 etc not 3, 2, 1 */
+        /* justify-content: space-between; */
+        /* it will give space in between the item (1--2--3--4) means starting from satring end and end at end point */
+        /* justify-content: space-around; */
+        /* it will give space like -1- -2- -3- -4- like this add space like this  */
+        /* justify-content: space-evenly; */
+        /*  it will give space like -1-2-3-4- equal space both the side */
+        flex-wrap: wrap-reverse;
+        /* it will make reverse means it will go upwards  */
+      }
+      .box {
+        margin: 5px;
+        height: 130px;
+        width: 130px;
+        border: 3px solid black;
+        text-align: center;
+      }
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: blueviolet;
+      }
+      #box3 {
+        background-color: yellow;
+      }
+      #box4 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Flex container</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item-1</div>
+      <div id="box2" class="box">Flex Item-2</div>
+      <div id="box3" class="box">Flex Item-3</div>
+      <div id="box4" class="box">Flex Item-4</div>
+      <div id="box1" class="box">Flex Item-5</div>
+      <div id="box2" class="box">Flex Item-6</div>
+      <div id="box3" class="box">Flex Item-7</div>
+      <div id="box4" class="box">Flex Item-8</div>
+    </div>
+  </body>
+</html>
