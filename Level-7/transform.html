@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: plum;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        transition: all 0.5s ease-in;
+      }
+
+      #box1:hover {
+        transform: rotateX(45deg);
+        /*  in  normal rotate  */
+        transform: rotateX(45deg);
+        /*  in x axis  */
+        transform: rotatey(45deg);
+        /*  in y axis  */
+      }
+      #box2:hover {
+        transform: scale(2);
+        /* it will make twice bigger than before  */
+      }
+      #box3 {
+        width: 75px;
+      }
+      #box3:hover {
+        transform: translate(70px);
+        /* in x direction   */
+
+        /* transform: translateY(50px); */
+        /*  in y direction */
+
+        /* transform: translate(70px, 40px); */
+        /* in x-y direction */
+      }
+      #box4:hover {
+        transition: all 1.2s ease-in-out;
+        transform: skew(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1" class="box">rotate</div>
+
+    <div id="box2" class="box">Scale</div>
+
+    <div id="box3" class="box">translate</div>
+
+    <div id="box4" class="box">skew</div>
+  </body>
+</html>

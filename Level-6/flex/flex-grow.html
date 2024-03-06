@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flex-container</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #heading {
+        margin-left: 15px;
+      }
+      #container {
+        width: 800px;
+        height: 600px;
+        background-color: lavender;
+        border: 3px solid black;
+        display: flex;
+        /* if we apply flex it will in in the line  */
+        flex-direction: row;
+        /* this is defalut direction */
+        flex-direction: row-reverse;
+        /* this will make start from right  */
+        /* flex-direction: column; */
+        /* it will make in column  */
+        /* flex-direction: column-reverse; */
+        /* it will satrt from botton (item in bottom and then above item 2 ) */
+      }
+      .box {
+        margin: 5px;
+        height: 130px;
+        width: 130px;
+        border: 3px solid black;
+        text-align: center;
+      }
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: blueviolet;
+        flex-grow: 2;
+        /*  it will increase as twice compare to others  */
+      }
+      #box3 {
+        background-color: yellow;
+      }
+      #box4 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Flex container</h1>
+    <div id="container">
+      <div id="box1" class="box">Flex Item-1</div>
+      <div id="box2" class="box">Flex Item-2</div>
+      <div id="box3" class="box">Flex Item-3</div>
+      <div id="box4" class="box">Flex Item-4</div>
+    </div>
+  </body>
+</html>
